@@ -1,0 +1,21 @@
+[
+  {
+    "id": "llm-quotum",
+    "config": {
+      "seat": {
+        "enabled": false
+      },
+      "payg": {
+        "enabled": true
+      },
+      "logUsage": true
+    }
+  },
+  {
+    "id": "agent-default-model",
+    "config": {
+      "provider": "quotum-payg",
+      "model": "deepseek-v4-flash"
+    }
+  }
+]

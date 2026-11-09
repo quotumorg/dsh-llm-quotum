@@ -1,0 +1,38 @@
+[
+  {
+    "id": "llm-quotum",
+    "config": {
+      "seat": {
+        "models": [
+          "deepseek-v4-flash"
+        ]
+      },
+      "logUsage": true
+    }
+  },
+  {
+    "insert": [
+      {
+        "id": "llm-quotum-workers",
+        "name": "@quotumorg/dsh-llm-quotum",
+        "config": {
+          "seat": {
+            "provider": "quotum-workers",
+            "apiKeyEnv": "QUOTUM_DAYKEY_WORKERS",
+            "models": [
+              "deepseek-v4-pro"
+            ]
+          },
+          "logUsage": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "agent-default-model",
+    "config": {
+      "provider": "quotum-seat",
+      "model": "deepseek-v4-flash"
+    }
+  }
+]

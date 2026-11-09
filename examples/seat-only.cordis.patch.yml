@@ -1,0 +1,15 @@
+[
+  {
+    "id": "llm-quotum",
+    "config": {
+      "logUsage": true
+    }
+  },
+  {
+    "id": "agent-default-model",
+    "config": {
+      "provider": "quotum-seat",
+      "model": "deepseek-v4-pro"
+    }
+  }
+]
